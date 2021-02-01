@@ -4,7 +4,6 @@ def add(name, members):
     f = open(root + name + ".txt", "a")
     f.write("members: " + members + "\n")
     f.close()
-    groups.add(name)
 
 def rank(name):
 
