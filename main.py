@@ -3,12 +3,15 @@ import groups
 import rank
 import sys
 import export
+import clear
 
 commands.add("help", "", "displays all cli commands")
 commands.add("addgroup", "name, members", "adds a group file to the local database")
 commands.add("score", "name", "enters ranking sequence for a given group")
 commands.add("rank", "category", "lists groups from highest to lowest score in the given category")
 commands.add("export", "", "exports rankings for all categories into a CSV file")
+commands.add("clear", "", "clears filetree")
+
 
 args = sys.argv
 if len(args) < 2:
@@ -35,6 +38,9 @@ if c == "rank":
 
 if c == "export":
     export.exportAll()
+
+if c == "clear":
+    clear.clear()
 
 if not commands.commandContains(c):
     print("invalid command: " + c)
