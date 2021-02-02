@@ -10,4 +10,4 @@ def clear():
 
     for x in range(0, filelen - 1):
         if txt or csv in files[x]:
-            files.pop(x)
+            os.remove(root + files[x])
