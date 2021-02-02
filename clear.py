@@ -2,7 +2,7 @@ import os
 
 root = "database/"
 txt = ".txt"
-csv = "csv"
+csv = ".csv"
 
 def clear():
     files = os.listdir(root)
