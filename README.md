@@ -4,8 +4,6 @@
   It uses a local database controlled by a CLI script to rank projects.<br/>
 </p>
 
-<br/>
-
 <h4>Projects are ranked on the following:</h4>
 <table class="tg">
 <thead>
@@ -42,10 +40,12 @@
   More categories can always be added to the script for a more holistic cumulative ranking.
 </p>
 
-<br/>
-
 <h4>Commands:</h4>
 <pre>
-help: displays all CLI commands
-addgroup [name, members]
+help:                      displays all CLI commands
+addgroup [name, members]:  adds a group file to the local database
+score [name]:              enters ranking sequence for a given group
+rank [category]:           lists groups from highest to lowest score in the given category
+export:                    exports rankings for call categories into a CSV file
+clear:                     clears filetree
 </pre>
